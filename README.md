@@ -6,7 +6,7 @@ as part of my journey doing [freeCodeCamp’s Responsive Web Design course](http
 - ‘survey-form’ is a mock-up for a cafe’s customer feedback form. <br>
 - if you locally host ‘index.html’, you’ll see live styling, layout, and interactive form questions. <br>
 - BUT, social links (instagram, website) are **not yet functional** ( ꩜ ᯅ ꩜;)⁭ ⁭(stay tuned! i am planning to build out the full site!) <br> 
-- you can also find a menu pdf i designed on canva pro under the ‘documents/’ folder 
+- you can also find a menu pdf which i had so much fun designing on canva pro under the ‘documents/’ folder. 
 
 ### usage .ᐟ
 - clone or download the repository. <br>
