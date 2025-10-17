@@ -1,4 +1,3 @@
-<div align=”center”>
 # BookNook Cafe’s Survey Form
 
 as part of my journey doing [freeCodeCamp’s Responsive Web Design course](https://www.freecodecamp.org/learn/2022/responsive-web-design/), i had to create a basic survey form. i decided to make it prettier, and also use it to practice both my html and css skills! ◝(ᵔᗜᵔ)◜
@@ -16,7 +15,6 @@ open ‘index.html’ in your browser.
 ## status .ᐟ
 definitely planning to revisit ‘survey-form’! it’ll keep getting better as i learn more (˶˃ ᵕ ˂˶)
 
-═══════
+<div align="center">═══════</div>
 
 *this project is for learning and fun – booknook cafe is fictitious!*
-</div>
