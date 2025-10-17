@@ -1,0 +1,276 @@
+/* change fonts */
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+  
+input {
+    width: 200px;
+}
+
+body {
+    text-align: center;
+    background-color: #fff7ea;
+    /* background-image: url('images/sketchpaper.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* padding: 50px;*/
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    color: #7c5045;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#cafe-name {
+    font-family: "Birthstone", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 55px;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+#feedback-form {
+    font-family: "Moirai One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    margin-top: -50px;
+}
+
+#description {
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.socials {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.socials a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: #7c5045
+}
+
+.socials a::before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.instagram-link::before{
+    background-image: url("images/instagram.png")
+}
+
+.website-link::before {
+    background-image: url("images/website.png")
+}
+
+#survey-form, #description {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.feedback-table-wrapper {
+    position: relative;
+    width: fit-content;
+    margin: 32px auto;
+    border: 2px solid #7c5045;
+    border-radius: 10px;
+    border-width: 1px;
+    padding-top: 32px;
+    box-sizing: border-box;
+    overflow: visible;
+}
+
+.feedback-title {
+    font-family: "Moirai One", system-ui;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #7c5045;
+    text-align: center;
+    background: #fff8ed;
+    position: absolute;
+    left: 50%;
+    top: -22px;
+    transform: translateX(-50%);
+    z-index: 2;
+    padding: 0 24px;
+    white-space: nowrap;
+    padding-bottom: 10px;
+}
+
+.feedback-title::before {
+    content: "";
+    position: absolute;
+    left: -12px;
+    right: -12px;
+    top: 50%;
+    height: 1.2em;
+    z-index: -1;
+    border-radius: 8px 8px 0 0;
+}
+
+/* .feedback-table-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+} */
+
+.customer-satisfaction {
+    max-width: 100vw;
+    overflow-x: auto;
+    padding: 0 8px;
+}
+
+.feedback-table {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    border: none;
+    margin: 0 auto;
+    padding-left: 32px;
+    padding-bottom: 10px;
+}
+  
+.feedback-table th, .feedback-table td {
+    text-align: center;
+    padding: 4px 6px;
+}
+  
+.feedback-table th {
+    color: #e07500;
+    font-weight: bold;
+    font-size: 18px;
+}
+  
+.feedback-table td:first-child {
+    width: auto;
+    min-width: 180px;
+    padding: 8px 14px;
+    text-align: left;
+    font-weight: 500;
+    color: #7b5232;
+}
+
+.feedback-table th, .feedback-table td:not(:first-child) {
+    width: 1%;
+    white-space: nowrap;
+    padding: 4px 0;
+    text-align: center;
+}
+  
+input[type="radio"] {
+    transform: scale(1.2);
+} 
+
+div {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.socials {
+    padding: 0;
+}
+
+.user-details {
+    display: flex;
+    gap: 48px;
+    justify-content: flex-start;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.form-row label {
+    margin-right: 1rem;
+    text-align: right;
+}
+
+.menu-satisfaction {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+
+.menu-left label,
+.menu-right label {
+    display: block;
+    margin: 8px 0;
+}
+
+.menu-left label {
+    text-align: left;
+}
+
+.menu-link {
+    font-size: 0.85em;  
+    font-style: italic;
+    margin-left: 8px;  
+    vertical-align: middle;
+    display: inline;
+    font-family: "Montserrat", sans-serif;
+} 
+
+.referral {
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+.recommend label {
+    text-align: left;
+}
+
+.suggestions {
+    display: block;
+    margin-bottom: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.suggestions textarea {
+    width: 100%;
+}
+
+input[type="submit"] {
+    background: linear-gradient(90deg, #facbb2 0%, #ffeecd 100%);
+    color: #7d4930;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 32px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px 0 #f8dfb9;
+    font-size: 1rem;
+    margin-top: 20px;
+}

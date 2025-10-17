@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Moirai+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header-container">
+      <div id="cafe-name">BookNook</div>
+      <div id="feedback-form">Feedback Form</div>
+      <div class="socials">
+        <a href="" class="instagram-link" target="_blank">Instagram</a> | <a href="" class="website-link" target="_blank">Website</a>
+      </div>
+    </div>
+    <p id="description">Your responses will help us improve the menu, ambiance, and overall vibe so your next visit is even better.</p>
+    <form id="survey-form" class="form">
+      <div class="user-details">
+        <div class="form-row">
+          <label for="name" id="name-label">Name: </label>
+          <input type="text" id="name" placeholder="Enter your name" required/>
+        </div>
+
+        <div class="form-row">
+          <label for="email" id="email-label">Email: </label>
+          <input type="email" id="email" placeholder="Enter your Email" required/>
+        </div>
+      </div>
+
+      <!-- <div class="customer-satisfaction">
+        <label for="number" id="number-label">From 1 (Poor) to 5 (Excellent), how would you rate the cafe's ambiance? </label>
+        <input type="number" id="number" min="1" max="5" placeholder="Enter your rating"/>
+
+        <label for="number" id="number-label">From 1 (Poor) to 5 (Excellent), how would you rate the friendliness of our staff? </label>
+        <input type="number" id="number" min="1" max="5" placeholder="Enter your rating"/>
+
+        <label for="number" id="number-label">From 1 (Poor) to 5 (Excellent), how would you rate your overall experience at BookNook? </label>
+        <input type="number" id="number" min="1" max="5" placeholder="Enter your rating"/>
+      </div> -->
+
+      <div class="feedback-table-wrapper">
+        <div class="feedback-title">Please rate these aspects of your visit: </div>
+        <table class="feedback-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Excellent</th>
+              <th>Good</th>
+              <th>Average</th>
+              <th>Bad</th>
+              <th>Poor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>How would you rate the cafe's ambiance?</td>
+              <td><input type="radio" name="ambiance" value="5"></td>
+              <td><input type="radio" name="ambiance" value="4"></td>
+              <td><input type="radio" name="ambiance" value="3"></td>
+              <td><input type="radio" name="ambiance" value="2"></td>
+              <td><input type="radio" name="ambiance" value="1"></td>
+            </tr>
+            <tr>
+              <td>How would you rate the friendliness of our staff?</td>
+              <td><input type="radio" name="staff" value="5"></td>
+              <td><input type="radio" name="staff" value="4"></td>
+              <td><input type="radio" name="staff" value="3"></td>
+              <td><input type="radio" name="staff" value="2"></td>
+              <td><input type="radio" name="staff" value="1"></td>
+            </tr>
+            <tr>
+              <td>How would you rate your overall experience at BookNook?</td>
+              <td><input type="radio" name="overall" value="5"></td>
+              <td><input type="radio" name="overall" value="4"></td>
+              <td><input type="radio" name="overall" value="3"></td>
+              <td><input type="radio" name="overall" value="2"></td>
+              <td><input type="radio" name="overall" value="1"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div> 
+
+      <!-- group ratings tgt: friendliness of staff + cafe ambience + overall experience + quality of books -->
+      <!-- group food tgt: usual order + food taste -->
+
+      <div class="menu-satisfaction">
+        <div class="menu-left">
+          <legend>What do you usually order?</legend>
+          <span class="menu-link">Check out our <a href="documents/menu.pdf" target="_blank">menu</a> here!</span>
+          <label><input type="checkbox" name="order" value="coffee"> Coffee</label>
+          <label><input type="checkbox" name="order" value="tea"> Tea</label>
+          <label><input type="checkbox" name="order" value="pastries"> Pastries</label>
+          <label><input type="checkbox" name="order" value="others"> Others</label>
+        </div>
+
+        <div class="menu-right">
+          <label for="number" id="number-label">From 1 (Poor) to 5 (Excellent), how was the taste of your food? </label>
+          <input type="number" id="number" min="1" max="5" placeholder="Enter your rating"/>
+        </div>
+      </div>
+
+      <div class="referral">
+        <label for="dropdown"> How did you hear about us?
+          <select id="dropdown" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">Word of Mouth</option>
+            <option value="2">BookNook's Website</option>
+            <option value="3">BookNook's Instagram</option>
+            <option value="4">Others</option>
+          </select>
+        </label>
+
+        <div class="recommend">
+          <legend>Would you recommend BookNook Cafe to a friend? </legend>
+          <label for="recommend-yes"><input id="recommend-yes" type="radio" name="recommend" value="yes" checked /> Yes </label>
+          <label for="recommend-maybe"><input id="recommend-maybe" type="radio" name="recommend" value="maybe" /> Maybe </label>
+          <label for="recommend-no"><input id="recommend-no" type="radio" name="recommend" value="no" /> No </label>
+        </div>
+      </div>
+
+      <div class="suggestions">
+        <label for="bio">Any suggestions or comments? </label>
+          <textarea id="bio" name="bio" rows="3" cols="30"></textarea>
+      </div>
+
+      <input type="submit" value="Submit" id="submit">
+    </form>
+  </body>
+</html>
